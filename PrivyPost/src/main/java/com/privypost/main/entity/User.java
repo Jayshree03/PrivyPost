@@ -1,4 +1,4 @@
-package com.privypost.entity;
+package com.privypost.main.entity;
 
 import jakarta.persistence.Entity;
 

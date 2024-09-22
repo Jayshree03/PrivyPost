@@ -1,0 +1,66 @@
+Finalized things are
+1. java springboot project per kaam ker rhe h(required to install jdk 17, eclipse, inside eclipse marketplace install this "spring tools 4(aka Spring tool suite 4)4.25.0 Release" and "jboss hibernate")
+for the spring tool installation check only the default checkboxes and for jboss hibernate first uncheck all and then check only those which contains word hibernate and then proceed.
+2. hibernate/jpa for database
+3. jsp for frontend(this are made in src/main/resources here we create the hierarchy META-INF/resources/WEB-INF/jsp/then here we will save all the jsp pages) otherwise they won't be executed
+4. Bcrypt algo for password encryption
+5. Content(subject, body,attachments) encryption ke liye sir ko AES algo ka bola h toh yeh part ka analysis kerna h ki kon-kon si algorithms use kerna h
+6. Java mail api for email transaction (smtp and imap protocols will be used) video reference codewithdurgesh
+7. there we have a package in src/main/java i.e. com.privypost.main
+	in that package we created 4 new packages that are:
+	a) com.privypost.main.controller - 
+	b) com.privypost.main.entity - here we will create all the classes(they will act as a table structure in database using hibernate with the same properties that we will declare in the class)
+	c) com.privypost.main.repository - in this folder we will create the interfaces which are implemented by service class methods
+	d) com.privypost.main.service- in this folder all the buisness logic inside the class 
+8. pom.xml contains all the dependencies, I have added spring-boot-starter-web(as it is a web application), spring-boot-devtools(for automatic configuration), hibernate-core(for hibernate), spring-boot-starter-test(for testing purpose), tomcat-embed-jasper(for jsp pages configuration)
+9. We can use spring-security for all session management things(not confirmed)
+10. how we are going to provide two way authentication(to be discussed)
+11. about public and private key how we are going to generate the key and how will we exchange it(to be discussed)
+
+
+
+	Documentation work 
+
+1. Research Paper(follow the IEEE standard)
+2. Report(standerized format)
+3. diagrams - class diagram, use case diagram, technical architecture, sequence diagram, ui design, data design, er diagram, dfd diagram, activity diagram
+4. ppt 2
+5. Poster
+
+
+
+	you can use following resources for reference
+1. Eclipse : https://youtu.be/0smG768uUis?si=Lx0PsmDMgp_ZURC6
+
+2. Cryptography Basics :
+https://youtu.be/1925zmDP_BY?si=5ef98A0GIo27Qjb6
+
+3. Java mail tutorials :
+https://youtube.com/playlist?list=PLmCsXDGbJHdiGpdGxj7j_OzY_bGkGEbc2&si=J7VNULFQO5_hCOZt
+
+4. Java mail tutorial code with durgesh :
+https://youtu.be/l0J-Edn76js?si=RTX6HAphMu1ax_tH
+
+5. Cryptography documentation :
+
+https://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto/CryptoSpec.html#CipherInput
+
+6. SpringBoot documentation :
+https://spring.io/projects/spring-boot
+
+7. this research paper
+ 
+International Research Journal of Engineering and Technology (IRJET)       e-ISSN: 2395-0056 
+Volume: 08 Issue: 05 | May 2021                 
+www.irjet.net                                                                     
+p-ISSN: 2395-0072 
+Building an Encrypted E-Mail System using PGP
+
+UI to be designed
+1. Main page(with signUp and login option)
+2. sign Up
+3. login
+4. Email dashboard(Main page after login i.e. inbox)
+5. Compose email page
+6. Sent Email page
+7. Email view page
