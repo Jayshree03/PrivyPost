@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>SignUp |</title>
+<title>Main | Privy Post</title>
 <link href="/Style/style.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,14 +17,17 @@
 		<a href="login" class="s_header_signup">Login</a>
 		<a href="signup" class="s_header_signup">Sign Up</a>
 	</div>
-	<form action="patientSignUp" method="post" class="s_form">
-			<h1>User Sign Up</h1>
-			<input class="s_input" type="email" name="puserid" placeholder="Email/UserId" required><br/><br/>
-			<input class="s_input" type="text" name="pname" placeholder="Name" required><br/><br/>
-			<input class="s_input" type="text" name="pmob" placeholder="Phone No." required><br/><br/>
-			<input class="s_input" type="password" name="ppass" placeholder="Password" required><br/><br/>
-			<input class="s_input" type="password" name="pcpass" placeholder="Confirm Password" required><br/><br/><br/>
-			<button class="s_button"  type="submit">Sign Up</button>
-	</form>
+	<h1 class="main">Welcome to Privy Post</h1>
+	<div class="main_content">
+		<div class="main_img">
+			<img src="/Image/Main1.png">
+		</div> 
+		<div class="main_content_h3"><br/><br/>
+			<h3><img class="main_content_h3_img" src="/Image/Tick.png">Identity-Based Encryption (IBE)</h3><br/>
+			<h3><img class="main_content_h3_img" src="/Image/Tick.png">Dynamic Key Generation</h3><br/>
+			<h3><img class="main_content_h3_img" src="/Image/Tick.png">End-to-End Encryption</h3><br/>
+			<h3><img class="main_content_h3_img" src="/Image/Tick.png">Two-Factor Authentication (2FA)</h3>
+		</div>
+	</div>
 </body>
 </html>

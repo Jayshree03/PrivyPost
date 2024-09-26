@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class MainController {
-	@RequestMapping("main")
+	@RequestMapping("privypost")
 	public String MainPage() {
-		return "Main";
+		return "privypostmain";
 	}
 	@RequestMapping("signup")
 	public String signUp() {
@@ -18,5 +18,17 @@ public class MainController {
 	@RequestMapping("login")
 	public String Login() {
 		return "UserLogin";
+	}
+	@RequestMapping("sent")
+	public String SentEmail() {
+		return "sentEmail";
+	}
+	@RequestMapping("compose")
+	public String ComposeEmail() {
+		return "composeEmail";
+	}
+	@RequestMapping("inbox")
+	public String Inbox() {
+		return "inboxEmail";
 	}
 }
