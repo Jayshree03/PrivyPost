@@ -17,8 +17,8 @@ public class User {
     @Column(name = "password_hash", nullable = false)
     private String passwordHash;
 
-    @Column(name = "2FA_secret")
-    private String twoFASecret;
+    // @Column(name = "2FA_secret")
+    // private String twoFASecret;
 
     @Column(name = "public_key", columnDefinition = "TEXT")
     private String publicKey;
@@ -68,13 +68,13 @@ public class User {
         this.passwordHash = passwordHash;
     }
 
-    public String getTwoFASecret() {
-        return twoFASecret;
-    }
+    // public String getTwoFASecret() {
+    //     return twoFASecret;
+    // }
 
-    public void setTwoFASecret(String twoFASecret) {
-        this.twoFASecret = twoFASecret;
-    }
+    // public void setTwoFASecret(String twoFASecret) {
+    //     this.twoFASecret = twoFASecret;
+    // }
 
     public String getPublicKey() {
         return publicKey;
