@@ -26,11 +26,7 @@ public class User {
     @Column(name = "private_key", columnDefinition = "TEXT")
     private String privateKey;
 
-    @Column(name = "created_at", nullable = false)
-    private LocalDateTime createdAt;
-
-    @Column(name = "last_login")
-    private LocalDateTime lastLogin;
+   
 
     // Default constructor
     public User() {}
@@ -39,7 +35,7 @@ public class User {
     public User(String email, String passwordHash) {
         this.email = email;
         this.passwordHash = passwordHash;
-        this.createdAt = LocalDateTime.now();
+     
     }
 
     // Getters and setters
@@ -92,21 +88,7 @@ public class User {
         this.privateKey = privateKey;
     }
 
-    public LocalDateTime getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(LocalDateTime createdAt) {
-        this.createdAt = createdAt;
-    }
-
-    public LocalDateTime getLastLogin() {
-        return lastLogin;
-    }
-
-    public void setLastLogin(LocalDateTime lastLogin) {
-        this.lastLogin = lastLogin;
-    }
+   
 
     // You can add additional methods here if needed
 }
