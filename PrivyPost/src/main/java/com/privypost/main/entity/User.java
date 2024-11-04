@@ -1,5 +1,6 @@
+package com.privypost.main.entity;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
@@ -17,8 +18,8 @@ public class User {
     @Column(name = "password_hash", nullable = false)
     private String passwordHash;
 
-    @Column(name = "2FA_secret")
-    private String twoFASecret;
+    // @Column(name = "2FA_secret")
+    // private String twoFASecret;
 
     @Column(name = "public_key", columnDefinition = "TEXT")
     private String publicKey;
@@ -26,11 +27,7 @@ public class User {
     @Column(name = "private_key", columnDefinition = "TEXT")
     private String privateKey;
 
-    @Column(name = "created_at", nullable = false)
-    private LocalDateTime createdAt;
-
-    @Column(name = "last_login")
-    private LocalDateTime lastLogin;
+   
 
     // Default constructor
     public User() {}
@@ -39,7 +36,7 @@ public class User {
     public User(String email, String passwordHash) {
         this.email = email;
         this.passwordHash = passwordHash;
-        this.createdAt = LocalDateTime.now();
+     
     }
 
     // Getters and setters
@@ -68,13 +65,13 @@ public class User {
         this.passwordHash = passwordHash;
     }
 
-    public String getTwoFASecret() {
-        return twoFASecret;
-    }
+    // public String getTwoFASecret() {
+    //     return twoFASecret;
+    // }
 
-    public void setTwoFASecret(String twoFASecret) {
-        this.twoFASecret = twoFASecret;
-    }
+    // public void setTwoFASecret(String twoFASecret) {
+    //     this.twoFASecret = twoFASecret;
+    // }
 
     public String getPublicKey() {
         return publicKey;
@@ -92,21 +89,7 @@ public class User {
         this.privateKey = privateKey;
     }
 
-    public LocalDateTime getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(LocalDateTime createdAt) {
-        this.createdAt = createdAt;
-    }
-
-    public LocalDateTime getLastLogin() {
-        return lastLogin;
-    }
-
-    public void setLastLogin(LocalDateTime lastLogin) {
-        this.lastLogin = lastLogin;
-    }
+   
 
     // You can add additional methods here if needed
 }

@@ -1,5 +1,6 @@
+package com.privypost.main.entity;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
@@ -85,3 +86,4 @@ public class KeyManagement {
 
     // You can add additional methods here if needed
 }
+

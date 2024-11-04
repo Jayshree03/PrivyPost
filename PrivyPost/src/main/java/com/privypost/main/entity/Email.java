@@ -1,7 +1,8 @@
+package com.privypost.main.entity;
 
-
-import javax.persistence.*;
 import java.time.LocalDateTime;
+import jakarta.persistence.*;
+
 
 @Entity
 @Table(name = "Emails")
